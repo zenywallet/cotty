@@ -2,11 +2,12 @@
 
 import std/strformat
 import caprese
+import index
 
 server(ssl = true, ip = "0.0.0.0", port = 8009):
   routes(host = "localhost"):
     get "/":
-      return send("Hello!".addHeader())
+      return response(content(CottyIndexHtml, "html"))
 
     let urlText = sanitizeHtml(reqUrl)
     return send(fmt"Not found: {urlText}".addDocType().addHeader(Status404))
