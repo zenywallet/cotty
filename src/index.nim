@@ -12,3 +12,5 @@ const CottyIndexHtml* = staticHtmlDocument:
       script(src="https://cdn.jsdelivr.net/npm/fomantic-ui@2.9.2/dist/semantic.min.js")
     body:
       text "Hello!"
+      tdiv(id="main")
+      script(src="/js/app.js")
