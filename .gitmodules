@@ -1,0 +1,3 @@
+[submodule "deps/minidenticons"]
+	path = deps/minidenticons
+	url = https://github.com/laurentpayot/minidenticons
